@@ -29,7 +29,7 @@ namespace comp123___week09_lesson_10a
             Console.WriteLine("Karma: " + hero1.Karma);
 
             SuperVillain villain1 = new SuperVillain("Thanos", 9999);
-            villain1.AddPower("Infinity Gauntlet", 999999999);
+            villain1.AddPower("Infinity Gauntlet", 99);
             villain1.AddPower("evil", 20);
             Console.WriteLine(villain1.ToString());
             Console.WriteLine("Malice: " + villain1.Malice);
@@ -43,7 +43,7 @@ namespace comp123___week09_lesson_10a
                 Console.WriteLine(hero1.Name + " is not a super villain");
             }
 
-            Console.WriteLine(villain1._findPower("Infinity Gauntlet"));
+            Console.WriteLine(villain1.GetPowerRank("Infinity Gauntlet"));
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Text;
  * Name: Alvin Quijano
  * Date: July 18, 2017
  * Description: This is the superHuman sub class
- * Version: 0.8 - Added find powers index method
+ * Version: 0.9 - Added the GetPowerRank method
  */
 
 namespace comp123___week09_lesson_10a
@@ -108,6 +108,22 @@ namespace comp123___week09_lesson_10a
 
             outputString += "=================================================================\n";
             return outputString;
+        }
+
+
+        /// <summary>
+        /// This method returns the power rank number of the power in the power list
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>This returns the power rank number or 0 if the power is not found</returns>
+        public int GetPowerRank(string name)
+        {
+            if (this._findPower(name) != -1)
+            {
+                return this.Powers[this._findPower(name)].Rank;
+            }
+
+            return 0;
         }
 
         /// <summary>
