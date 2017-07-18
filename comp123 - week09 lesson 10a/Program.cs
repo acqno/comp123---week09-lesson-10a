@@ -32,6 +32,15 @@ namespace comp123___week09_lesson_10a
             villain1.AddPower("Infinity Gauntlet", 999999999);
             Console.WriteLine(villain1.ToString());
             Console.WriteLine("Malice: " + villain1.Malice);
+
+            if (hero1 is IHasMalice)
+            {
+                Console.WriteLine(hero1.Name + " is definitely a super hero");
+            }
+            else
+            {
+                Console.WriteLine(hero1.Name + " is not a super villain");
+            }
         }
     }
 }

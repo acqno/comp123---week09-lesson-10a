@@ -7,7 +7,7 @@ using System.Text;
  * Name: Alvin Quijano
  * Date: July 11, 2017
  * Description: This is the power class
- * Version: 0.1 - Power class created
+ * Version: 0.2 - Added the greater than and less than overloaded methods to return the greater or lesser power. 
  */
 
 namespace comp123___week09_lesson_10a
@@ -32,5 +32,30 @@ namespace comp123___week09_lesson_10a
             Name = name;
             Rank = rank;
         }
+
+        // OVERLOADED METHODS 
+
+        /// <summary>
+        /// This method overloads the > operator for the power class
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns the power that is greater</returns>
+        public static Power operator >(Power lhs, Power rhs)
+        {
+            return (lhs.Rank > rhs.Rank) ? lhs : rhs;
+        }
+
+        /// <summary>
+        /// This method overlads the < operator for the power class.
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns the power that is lesser in rank</returns>
+        public static Power operator <(Power lhs, Power rhs)
+        {
+            return (lhs.Rank < rhs.Rank) ? lhs : rhs;
+        }
+
     }
 }
