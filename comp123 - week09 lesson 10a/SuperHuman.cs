@@ -5,9 +5,9 @@ using System.Text;
 
 /*
  * Name: Alvin Quijano
- * Date: July 11, 2017
+ * Date: July 18, 2017
  * Description: This is the superHuman sub class
- * Version: 0.7 - Added the DisplaySkills stub method to satisfy the Human super class requirements
+ * Version: 0.8 - Added find powers index method
  */
 
 namespace comp123___week09_lesson_10a
@@ -46,6 +46,34 @@ namespace comp123___week09_lesson_10a
         private void _Initialize()
         {
             _powers = new List<Power>();
+        }
+
+
+        /// <summary>
+        /// This private method returns the index of the power name if found.
+        /// If not found it returns -1
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Returns an integer related to the index of the power</returns>
+        private int _findPower(string name)
+        {
+            int index = 0;
+
+            foreach (Power power in this.Powers)
+            {
+                if (name.Equals(power.Name))
+                {
+                    break;
+                }
+                index++;
+
+                if(this.Powers.Count == index)
+                {
+                    index = -1;
+                }
+            }
+
+            return index;
         }
 
         // PUBLIC METHODS 
