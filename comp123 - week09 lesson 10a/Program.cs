@@ -22,17 +22,25 @@ namespace comp123___week09_lesson_10a
             superhuman.AddPower("Webcasting", 40);
             Console.WriteLine(superhuman.ToString());
 
-            SuperHero hero1 = new SuperHero("Captain America", 100);
+            SuperHero hero1 = new SuperHero("\nCaptain America", 100);
             hero1.AddPower("Shield", 40);
             hero1.AddPower("Super Strength", 30);
             Console.WriteLine(hero1.ToString());
-            Console.WriteLine("Karma: " + hero1.Karma);
+            Console.WriteLine("Karma: " + hero1.Karma + "\n");
 
             SuperVillain villain1 = new SuperVillain("Thanos", 9999);
             villain1.AddPower("Infinity Gauntlet", 99);
             villain1.AddPower("evil", 20);
             Console.WriteLine(villain1.ToString());
-            Console.WriteLine("Malice: " + villain1.Malice);
+            Console.WriteLine("Malice: " + villain1.Malice + "\n");
+
+            AntiHero batman = new AntiHero("Batman", 20, 20);
+            batman.AddPower("Super Intelligence", 50);
+            Console.WriteLine(batman.ToString());
+            Console.WriteLine("Karma: " + batman.Karma);
+            Console.WriteLine("Malice: " + batman.Malice + "\n");
+            Console.WriteLine();
+
 
             if (hero1 is IHasMalice)
             {

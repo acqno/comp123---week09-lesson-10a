@@ -100,13 +100,12 @@ namespace comp123___week09_lesson_10a
             string outputString = "";
             outputString += "=================================================================\n";
             outputString += "Name: " + this.Name + "\n";
-            outputString += "=================================================================\n";
             foreach (Power power in this.Powers)
             {
                 outputString += "Power: " + power.Name + " Rank: " + power.Rank + "\n";
             }
 
-            outputString += "=================================================================\n";
+            outputString += "=================================================================";
             return outputString;
         }
 
@@ -123,7 +122,7 @@ namespace comp123___week09_lesson_10a
                 return this.Powers[this._findPower(name)].Rank;
             }
 
-            return new Power("unknown", 0);
+            return 0;
         }
 
         /// <summary>
