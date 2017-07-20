@@ -16,5 +16,6 @@ namespace comp123___week09_lesson_10a
     {
         // PUBLIC PROPERTIES 
         int Malice { get; set; }
+        
     }
 }

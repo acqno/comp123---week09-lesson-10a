@@ -8,12 +8,12 @@ using System.Text;
  * Date: July 20, 2017
  * Description: This is the AntiHero Class
  * It extends the superHuman class and implements both the IHasKarma and IHasMalice interfaces
- * Version: 0.1 - Created the AntiHero class. 
+ * Version: 0.2 - Implemented ITrainable interface
  */
 
 namespace comp123___week09_lesson_10a
 {
-    public class AntiHero : SuperHuman, IHasKarma, IHasMalice
+    public class AntiHero : SuperHuman, IHasKarma, IHasMalice, ITrainable
     {
         // PRIVATE INSTANCE VARIABLES 
         private int _karma;
@@ -61,11 +61,15 @@ namespace comp123___week09_lesson_10a
             this.Malice = malice;
         }
 
-        
+
 
         //PRIVATE METHODS 
 
         //PUBLIC METHODS 
+        public void Train()
+        {
+
+        }
 
     }
 }
