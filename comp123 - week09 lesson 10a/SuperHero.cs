@@ -19,8 +19,8 @@ namespace comp123___week09_lesson_10a
     {
         // PRIVATE INSTANCE VARIABLES 
         private int _karma;
-        // PUBLIC PROPERTIES
 
+        // PUBLIC PROPERTIES
         public int Karma
         {
             get

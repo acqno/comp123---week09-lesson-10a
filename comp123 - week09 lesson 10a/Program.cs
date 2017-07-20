@@ -43,7 +43,10 @@ namespace comp123___week09_lesson_10a
                 Console.WriteLine(hero1.Name + " is not a super villain");
             }
 
-            Console.WriteLine(villain1.GetPowerRank("Infinity Gauntlet"));
+            if(villain1.GetPower("Infinity Gauntlet") > villain1.GetPower("evil"))
+            {
+                Console.WriteLine("Infinity Gauntlet is more powerful than evil");
+            }
         }
     }
 }

@@ -116,14 +116,14 @@ namespace comp123___week09_lesson_10a
         /// </summary>
         /// <param name="name"></param>
         /// <returns>This returns the power rank number or 0 if the power is not found</returns>
-        public int GetPowerRank(string name)
+        public int GetPower(string name)
         {
             if (this._findPower(name) != -1)
             {
                 return this.Powers[this._findPower(name)].Rank;
             }
 
-            return 0;
+            return new Power("unknown", 0);
         }
 
         /// <summary>
