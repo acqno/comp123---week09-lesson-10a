@@ -7,12 +7,12 @@ using System.Text;
  * Name: Alvin Quijano
  * Date: July 13, 2017
  * Description: This is the Super Villain class
- * Version: 0.2 - Implemented ITrainable interface
+ * Version: 0.3 - refactored - removed the ITrainable interface 
  */
 
 namespace comp123___week09_lesson_10a
 {
-    public class SuperVillain : SuperHuman, IHasMalice, ITrainable
+    public class SuperVillain : SuperHuman, IHasMalice
     {
         // PRIVATE INSTANCE VARIABLES 
         private int _malice;
@@ -43,10 +43,11 @@ namespace comp123___week09_lesson_10a
             this.Malice = malice;
         }
 
-        public void Trains()
+        // PUBLIC METHODS 
+
+        public override void Trains()
         {
             Console.WriteLine("not implemented");
         }
-
     }
 }

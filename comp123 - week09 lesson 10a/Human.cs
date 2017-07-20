@@ -45,7 +45,9 @@ namespace comp123___week09_lesson_10a
             this.Name = name;
         }
 
+        // PUBLIC ABSTRACT METHODS 
         public abstract void DisplaySkills();
 
+        public abstract void Trains();
     }
 }

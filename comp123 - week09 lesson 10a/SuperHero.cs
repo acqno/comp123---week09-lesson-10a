@@ -7,7 +7,7 @@ using System.Text;
  * Name: Alvin Quijano
  * Date: July 13, 2017
  * Description: This is the SuperHeroes class
- * Version: 0.4 - Implemented ITrainable interface
+ * Version: 0.5 - refactored - removed the ITrainable interface 
  */
 
 namespace comp123___week09_lesson_10a
@@ -15,7 +15,7 @@ namespace comp123___week09_lesson_10a
     /// <summary>
     /// This is the SuperHero Class
     /// </summary>
-    public class SuperHero : SuperHuman, IHasKarma, ITrainable
+    public class SuperHero : SuperHuman, IHasKarma
     {
         // PRIVATE INSTANCE VARIABLES 
         private int _karma;
@@ -47,12 +47,12 @@ namespace comp123___week09_lesson_10a
             this.Karma = karma;
         }
 
-        public void Trains()
-        {
-            Console.WriteLine("not implemented");
-        }
         //PRIVATE METHODS 
 
         // PUBLIC METHODS  
+        public override void Trains()
+        {
+            Console.WriteLine("not implemented");
+        }
     }
 }

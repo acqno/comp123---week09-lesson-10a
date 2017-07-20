@@ -134,5 +134,10 @@ namespace comp123___week09_lesson_10a
         {
             Console.WriteLine("Not Implemented");
         }
+
+        public override void Trains()
+        {
+            Console.WriteLine("To Be implemented in subclass");
+        }
     }
 }

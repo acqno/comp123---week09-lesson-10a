@@ -8,12 +8,12 @@ using System.Text;
  * Date: July 20, 2017
  * Description: This is the AntiHero Class
  * It extends the superHuman class and implements both the IHasKarma and IHasMalice interfaces
- * Version: 0.2 - Implemented ITrainable interface
+ * Version: 0.3 - refactored - removed the ITrainable interface 
  */
 
 namespace comp123___week09_lesson_10a
 {
-    public class AntiHero : SuperHuman, IHasKarma, IHasMalice, ITrainable
+    public class AntiHero : SuperHuman, IHasKarma, IHasMalice
     {
         // PRIVATE INSTANCE VARIABLES 
         private int _karma;
@@ -66,9 +66,9 @@ namespace comp123___week09_lesson_10a
         //PRIVATE METHODS 
 
         //PUBLIC METHODS 
-        public void Train()
+        public override void Trains()
         {
-
+            Console.WriteLine("Not Implimented");
         }
 
     }
